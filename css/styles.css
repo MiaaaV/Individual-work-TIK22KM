@@ -1,3 +1,11 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header {
+    font-family: 'Fredoka One', cursive;
+}
+
 .navbar {
     position: absolute;
     z-index: 1;
@@ -22,11 +30,12 @@ li {
 }
 
 .dropdown-menu.show {
-    background-color: rgb(235, 186, 185);
     display: flex;
     padding: 1.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
     border: transparent;
+    background-image: linear-gradient(to bottom, #efc8c7, #d4d2d2);
 }
 
 .dropdown-menu.show ul {
@@ -45,9 +54,25 @@ li {
     background-color: inherit;
 }
 
+.dropdown-img {
+    display: flex;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    z-index: 1;
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+    color: white;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+}
+
 .carousel-item {
     min-width: 100%;
-    height: 50rem;
+    height: 59rem;
     background-color: black;
     filter: brightness(80%);
 }
