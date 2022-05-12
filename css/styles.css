@@ -13,12 +13,36 @@
     gap: 2rem;
 }
 
+li {
+    list-style-type: none;
+}
+
 .nav-link {
     font-size: 1.2rem;
 }
 
-.dropdown-menu {
+.dropdown-menu.show {
     background-color: rgb(235, 186, 185);
+    display: flex;
+    padding: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: transparent;
+}
+
+.dropdown-menu.show ul {
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-item {
+    padding: 0.5rem 2rem 0.5rem 1.2rem;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    text-decoration: underline;
+    background-color: inherit;
 }
 
 .carousel-item {
