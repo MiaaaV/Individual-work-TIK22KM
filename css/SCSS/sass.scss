@@ -1,14 +1,26 @@
+/* MIXINS */
+
+
+/* @mixin theme ($theme: DarkGray) {} */
+
+
 /* VARIABLES */
 
 $box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px,
 rgba(0, 0, 0, 0.22) 0px 15px 12px;
 $basic-font: 'Quicksand',
 sans-serif;
+$big-font: 'Fredoka One',
+cursive;
 
 /* SCSS STARTS */
 
+html {
+    scroll-behavior: smooth;
+}
+
 #header {
-    font-family: 'Fredoka One', cursive;
+    font-family: $big-font;
 }
 
 .navbar {
@@ -65,8 +77,8 @@ sans-serif;
 .carousel-caption {
     z-index: 1;
     position: absolute;
-    bottom: 50%;
-    left: 25%;
+    text-align: center;
+    margin-bottom: 33rem;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.12);
     box-shadow: $box-shadow;
@@ -75,17 +87,108 @@ sans-serif;
 }
 
 .carousel-item {
-    min-width: 100%;
-    height: 59rem;
     background-color: black;
     filter: brightness(80%);
+}
+
+
+/* GRID */
+
+.grid-header {
+    font-family: $big-font;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.featured {
+    padding: 10rem 0 10rem 0;
+    align-items: center;
+}
+
+.acc-item {
+    text-align: center;
+    img {
+        width: 70%;
+        border-radius: 10%;
+        box-shadow: $box-shadow;
+        transition: .5s;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+    p {
+        padding-top: 2rem;
+        font-family: $basic-font;
+        font-weight: bold;
+        font-size: large;
+    }
+}
+
+
+/* MANUAL CAROUSEL */
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:1440px) {
+    .carousel-caption {
+        margin-bottom: 20rem;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width:1199px) {
+    .carousel-caption {
+        margin-bottom: 12rem;
+    }
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 90%;
+    }
+    .carousel-caption {
+        margin-bottom: 10rem;
+        padding: 0.7rem;
+        #header {
+            font-size: x-large;
+        }
+    }
 }
 
 @media (max-width:576px) {
     .navbar {
         background-color: rgba(0, 0, 0, 0.625);
+        position: relative;
     }
     .carousel {
         display: none;
     }
 }
+
+
+/*
+
+<div class="featured container-md">
+        <div class="row justify-content-lg-center">
+            <div class="acc-item col-sm-4">
+                <!-- https://unsplash.com/photos/9S4GyfpxnTI -->
+                <img src="images/dog-leash.jpg">
+                <p>Leashes</p>
+            </div>
+            <div class="acc-item col-sm-4">
+                <!-- https://unsplash.com/photos/A-YUeXZ1rq8-->
+                <img src="images/dog-toy.jpg">
+                <p>Toys</p>
+            </div>
+            <div class="acc-item col-sm-4">
+                <!-- https://unsplash.com/photos/UoFjCM-QFaE -->
+                <img src="images/outdoor-activity.jpg">
+                <p>Outdoor activity</p>
+            </div>
+        </div>
+    </div>
+
+*/

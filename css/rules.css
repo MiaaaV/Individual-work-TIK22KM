@@ -5,9 +5,9 @@
 
 
 /* 
-Primary theme colour       #ebbab9 tint #edc1c0 / #efc8c7
-Nav Home                   #fff
-Nav list items             rgb(255,255,255,.55)
+      Primary theme colour       #ebbab9              tint #edc1c0 / #efc8c7
+      Nav Home                   #fff
+      Nav list items             rgb(255,255,255,.55)
 */
 
 
@@ -15,5 +15,14 @@ Nav list items             rgb(255,255,255,.55)
 
 
 /*
-Nav                         1.2rem
+      Nav                         1.2rem
+*/
+
+
+/***** FONT FAMILIES *****/
+
+
+/*
+      Big text font               'Fredoka One', cursive
+      Paragraph font              'Quicksand', sans-serif
 */

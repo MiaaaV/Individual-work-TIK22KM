@@ -1,5 +1,11 @@
+/* MIXINS */
+/* @mixin theme ($theme: DarkGray) {} */
 /* VARIABLES */
 /* SCSS STARTS */
+html {
+  scroll-behavior: smooth;
+}
+
 #header {
   font-family: "Fredoka One", cursive;
 }
@@ -58,8 +64,8 @@
 .carousel-caption {
   z-index: 1;
   position: absolute;
-  bottom: 50%;
-  left: 25%;
+  text-align: center;
+  margin-bottom: 33rem;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.12);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -68,20 +74,192 @@
 }
 
 .carousel-item {
-  min-width: 100%;
-  height: 59rem;
   background-color: black;
   filter: brightness(80%);
 }
 
+/* GRID */
+.grid-header {
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.featured {
+  padding: 10rem 0 10rem 0;
+  align-items: center;
+}
+
+.acc-item {
+  text-align: center;
+}
+.acc-item img {
+  width: 70%;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.5s;
+}
+.acc-item img:hover {
+  transform: scale(1.1);
+}
+.acc-item p {
+  padding-top: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* MANUAL CAROUSEL */
+#slider {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-container {
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#controls i {
+  font-size: 1rem;
+}
+
+.previous,
+.next {
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  transition: 0.7s ease-in-out;
+  border: 3px solid black;
+  line-height: 0;
+  font-size: 1.5rem;
+}
+.previous :hover,
+.next :hover {
+  color: gray;
+}
+
+.slide-img {
+  width: 100%;
+  height: 275px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.slide-img :hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.slide-img a {
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 1.5rem;
+  color: red;
+  opacity: 0;
+}
+.slide-img a:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.img-1 {
+  background-image: url("/images/dog-leash.jpg");
+}
+
+.img-2 {
+  background-image: url("/images/dog-toy.jpg");
+}
+
+.img-3 {
+  background-image: url("/images/outdoor-activity.jpg");
+}
+
+.img-4 {
+  background-image: url("/images/dog-leash.jpg");
+}
+
+.img-5 {
+  background-image: url("/images/pexels-roberto-nickson-2816168.jpg");
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1440px) {
+  .carousel-caption {
+    margin-bottom: 20rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .carousel-caption {
+    margin-bottom: 12rem;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+
+  .carousel-caption {
+    margin-bottom: 10rem;
+    padding: 0.7rem;
+  }
+  .carousel-caption #header {
+    font-size: x-large;
+  }
+}
 @media (max-width: 576px) {
   .navbar {
     background-color: rgba(0, 0, 0, 0.625);
+    position: relative;
   }
 
   .carousel {
     display: none;
   }
 }
+/*
+
+<div class="featured container-md">
+        <div class="row justify-content-lg-center">
+            <div class="acc-item col-sm-4">
+                <!-- https://unsplash.com/photos/9S4GyfpxnTI -->
+                <img src="images/dog-leash.jpg">
+                <p>Leashes</p>
+            </div>
+            <div class="acc-item col-sm-4">
+                <!-- https://unsplash.com/photos/A-YUeXZ1rq8-->
+                <img src="images/dog-toy.jpg">
+                <p>Toys</p>
+            </div>
+            <div class="acc-item col-sm-4">
+                <!-- https://unsplash.com/photos/UoFjCM-QFaE -->
+                <img src="images/outdoor-activity.jpg">
+                <p>Outdoor activity</p>
+            </div>
+        </div>
+    </div>
+
+*/
 
 /*# sourceMappingURL=built-styles.css.map */
