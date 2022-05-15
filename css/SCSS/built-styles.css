@@ -1,0 +1,87 @@
+/* VARIABLES */
+/* SCSS STARTS */
+#header {
+  font-family: "Fredoka One", cursive;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(128, 128, 128, 0.624);
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.navbar-nav {
+  gap: 2rem;
+}
+.navbar-nav li {
+  list-style-type: none;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.dropdown-menu.show {
+  display: flex;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 10px;
+  border: transparent;
+  background-image: url("/images/tree_bark.png");
+}
+.dropdown-menu.show ul {
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdown-item {
+  padding: 0.5rem 2rem 0.5rem 1.2rem;
+  text-align: left;
+}
+.dropdown-item :hover {
+  text-decoration: underline;
+  background-color: inherit;
+}
+
+.dropdown-img {
+  display: flex;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  z-index: 1;
+  position: absolute;
+  bottom: 50%;
+  left: 25%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  backdrop-filter: blur(4px);
+  font-family: "Quicksand", sans-serif;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 59rem;
+  background-color: black;
+  filter: brightness(80%);
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.625);
+  }
+
+  .carousel {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=built-styles.css.map */
