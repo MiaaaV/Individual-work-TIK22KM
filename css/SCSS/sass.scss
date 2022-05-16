@@ -1,7 +1,13 @@
 /* MIXINS */
 
-
-/* @mixin theme ($theme: DarkGray) {} */
+@mixin theme($theme: #f9eaea) {
+    background: $theme;
+    box-shadow: 0 0 1px rgba($theme, .25);
+    color: #333;
+    .slider-btn {
+        background-color: white;
+    }
+}
 
 
 /* VARIABLES */
@@ -92,40 +98,82 @@ html {
 }
 
 
-/* GRID */
+/* MANUAL CAROUSEL */
 
 .grid-header {
     font-family: $big-font;
     text-align: center;
-    padding-top: 5rem;
+    padding: 3rem 0 3rem 0;
 }
 
-.featured {
-    padding: 10rem 0 10rem 0;
-    align-items: center;
-}
-
-.acc-item {
+.container-fluid {
     text-align: center;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+
+.slider-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
+    margin: auto;
+}
+
+.slider-main {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.item {
+    width: 20rem;
+    display: inline-block;
+    position: relative;
+    margin: 1rem;
+    transition: 0.4s;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    height: 19rem;
+}
+
+.text {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    border-radius: 50%;
     img {
-        width: 70%;
-        border-radius: 10%;
-        box-shadow: $box-shadow;
-        transition: .5s;
+        display: block;
+        width: 280px;
+        box-shadow: rgba(0, 0, 0, 0.313) 0px 5px 15px, rgba(0, 0, 0, 0.461) 0px 6px 6px;
+        transition: all 0.4s;
     }
     img:hover {
         transform: scale(1.1);
     }
-    p {
-        padding-top: 2rem;
-        font-family: $basic-font;
-        font-weight: bold;
-        font-size: large;
+}
+
+.slider-btn {
+    padding-bottom: 3rem;
+    background-color: #f9eaea;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+     :hover {
+        color: gray;
     }
 }
 
-
-/* MANUAL CAROUSEL */
+.indoors {
+    @include theme;
+}
 
 
 /* MEDIA QUERIES */
@@ -167,28 +215,3 @@ html {
         display: none;
     }
 }
-
-
-/*
-
-<div class="featured container-md">
-        <div class="row justify-content-lg-center">
-            <div class="acc-item col-sm-4">
-                <!-- https://unsplash.com/photos/9S4GyfpxnTI -->
-                <img src="images/dog-leash.jpg">
-                <p>Leashes</p>
-            </div>
-            <div class="acc-item col-sm-4">
-                <!-- https://unsplash.com/photos/A-YUeXZ1rq8-->
-                <img src="images/dog-toy.jpg">
-                <p>Toys</p>
-            </div>
-            <div class="acc-item col-sm-4">
-                <!-- https://unsplash.com/photos/UoFjCM-QFaE -->
-                <img src="images/outdoor-activity.jpg">
-                <p>Outdoor activity</p>
-            </div>
-        </div>
-    </div>
-
-*/
