@@ -175,6 +175,11 @@ html {
     @include theme;
 }
 
+.abc {
+    background-image: url(/images/hoodie.jpg);
+    background-size: cover;
+}
+
 
 /* MEDIA QUERIES */
 
