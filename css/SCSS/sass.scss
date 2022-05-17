@@ -218,9 +218,15 @@
         }
         
         @media (max-width:576px) {
+            .active {
+                padding-top: 2rem;
+            }
             .navbar {
                 background-color: rgba(0, 0, 0, 0.625);
                 position: relative;
+            }
+            .navbar-nav {
+                display: block;
             }
             .carousel {
                 display: none;
