@@ -50,9 +50,11 @@ html {
   padding: 0.5rem 2rem 0.5rem 1.2rem;
   text-align: left;
 }
-.dropdown-item :hover {
+
+/* doesn't work anymore if nested with above, bug? */
+.dropdown-item:hover {
+  background-color: transparent;
   text-decoration: underline;
-  background-color: inherit;
 }
 
 .dropdown-img {
@@ -104,7 +106,7 @@ html {
 }
 
 .item {
-  width: 20rem;
+  width: 10rem;
   display: inline-block;
   position: relative;
   margin: 1rem;
@@ -127,7 +129,7 @@ html {
 }
 .text img {
   display: block;
-  width: 280px;
+  width: 220px;
   box-shadow: rgba(0, 0, 0, 0.313) 0px 5px 15px, rgba(0, 0, 0, 0.461) 0px 6px 6px;
   transition: all 0.4s;
 }
@@ -190,6 +192,20 @@ html {
   .carousel-caption #header {
     font-size: x-large;
   }
+
+  .dropdown-menu.show {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 2rem 0 1.2rem;
+  }
+
+  .dropdown-img {
+    width: 95%;
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 576px) {
   .navbar {
@@ -198,6 +214,10 @@ html {
   }
 
   .carousel {
+    display: none;
+  }
+
+  .dropdown-img {
     display: none;
   }
 }
