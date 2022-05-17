@@ -279,6 +279,12 @@
             }
         }
         
+        .footer-link:hover,
+        .address:hover {
+            cursor: pointer;
+            color: rgb(255, 255, 255, .55);
+        }
+        
         .copyright {
             text-align: left;
             color: $lighter-font;
@@ -297,6 +303,23 @@
         @media (max-width:1199px) {
             .carousel-caption {
                 margin-bottom: 12rem;
+            }
+            .grid-header {
+                padding: 2rem 0 2rem 0;
+            }
+            .text img {
+                width: 200px;
+            }
+            .feature-container {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+            .feature-icon {
+                height: 2.2rem;
+                width: 2.2rem;
+            }
+            .feature-title {
+                font-size: 1.2rem;
             }
         }
         
@@ -322,6 +345,21 @@
                 width: 95%;
                 margin-top: 1rem;
             }
+            .item {
+                width: 5rem;
+            }
+            .text img {
+                width: 150px;
+            }
+            .payment-types img {
+                height: 2rem;
+            }
+            .copyright {
+                margin-bottom: 2rem;
+            }
+            .footer-heading {
+                margin-bottom: 1.5rem;
+            }
         }
         
         @media (max-width:576px) {
@@ -340,5 +378,16 @@
             }
             .dropdown-img {
                 display: none;
+            }
+            .info-container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                text-align: left;
+            }
+            .logo-col img {
+                display: none;
+            }
+            .address-col {
+                padding: 0 1rem 0 1rem;
             }
         }
