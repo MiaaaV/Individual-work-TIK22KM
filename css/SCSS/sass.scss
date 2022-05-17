@@ -304,6 +304,16 @@
             .carousel-caption {
                 margin-bottom: 12rem;
             }
+            .dropdown-menu.show {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .dropdown-item {
+                padding: 0.5rem 2rem 0 1.2rem;
+            }
+            .dropdown-img {
+                display: none;
+            }
             .grid-header {
                 padding: 2rem 0 2rem 0;
             }
@@ -334,22 +344,20 @@
                     font-size: x-large;
                 }
             }
-            .dropdown-menu.show {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .dropdown-item {
-                padding: 0.5rem 2rem 0 1.2rem;
-            }
-            .dropdown-img {
-                width: 95%;
-                margin-top: 1rem;
-            }
             .item {
                 width: 5rem;
             }
             .text img {
                 width: 150px;
+            }
+            .dropdown-menu.show {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .dropdown-img {
+                display: flex;
+                width: 90%;
+                margin-top: 2rem;
             }
             .payment-types img {
                 height: 2rem;
@@ -374,6 +382,13 @@
                 display: block;
             }
             .carousel {
+                display: none;
+            }
+            .dropdown-menu.show {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .dropdown-item {
                 display: none;
             }
             .dropdown-img {
