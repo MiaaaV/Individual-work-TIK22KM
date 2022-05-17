@@ -1,6 +1,6 @@
         /* MIXINS */
         
-        @mixin theme($theme: #f9eaea) {
+        @mixin theme($theme: #a7cbaf) {
             background: $theme;
             box-shadow: 0 0 1px rgba($theme, .25);
             color: #333;
@@ -16,6 +16,8 @@
         sans-serif;
         $big-font: 'Fredoka One',
         cursive;
+        $dark-font: #212529;
+        $lighter-font: #646669;
         /* SCSS STARTS */
         
         html {
@@ -156,7 +158,7 @@
         
         .slider-btn {
             padding-bottom: 3rem;
-            background-color: #f9eaea;
+            background-color: #a7cbaf;
             border: none;
             outline: none;
             font-size: 2rem;
@@ -171,10 +173,115 @@
         .indoors {
             @include theme;
         }
+        /* FEATURES */
         
-        .abc {
-            background-image: url(/images/hoodie.jpg);
-            background-size: cover;
+        .feature-row {
+            justify-content: center;
+        }
+        
+        .feature-container {
+            background-color: #81B48C;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            max-width: 100%;
+        }
+        
+        .feature {
+            text-align: center;
+        }
+        
+        .feature-icon {
+            color: $dark-font;
+            background-color: #a7cbaf;
+            height: 3.2rem;
+            width: 3.2rem;
+            margin-bottom: 1.5rem;
+            padding: 1.6rem;
+            border-radius: 50%;
+        }
+        
+        .feature-title {
+            font-family: $basic-font;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 1.6rem;
+            width: 100%;
+        }
+        
+        .feature-text {
+            font-size: 1.8rem;
+            line-height: 1.8;
+        }
+        /* FOOTER */
+        
+        footer {
+            background-color: #373b3e;
+        }
+        
+        .info-container {
+            width: 100%;
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+        }
+        
+        .logo-col {
+            text-align: center;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        
+        .footer-logo {
+            display: block;
+            margin-bottom: 0.5rem;
+            max-width: 100%;
+        }
+        
+        .payment-types {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+            padding: 0;
+        }
+        
+        .footer-nav {
+            padding: 0;
+            list-style: none;
+            li {
+                margin-bottom: 1rem;
+            }
+             :hover {
+                color: rgb(255, 255, 255, .55);
+            }
+        }
+        
+        .contacts p {
+            margin-bottom: 2rem;
+        }
+        
+        .footer-heading {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 3rem;
+            font-family: $basic-font;
+            color: $lighter-font;
+        }
+        
+        .footer-link,
+        .address {
+            color: $lighter-font;
+            font-family: $basic-font;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s;
+            img {
+                height: 3rem;
+            }
+        }
+        
+        .copyright {
+            text-align: left;
+            color: $lighter-font;
         }
         /* MEDIA QUERIES */
         

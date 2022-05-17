@@ -139,7 +139,7 @@ html {
 
 .slider-btn {
   padding-bottom: 3rem;
-  background-color: #f9eaea;
+  background-color: #a7cbaf;
   border: none;
   outline: none;
   font-size: 2rem;
@@ -152,17 +152,123 @@ html {
 }
 
 .indoors {
-  background: #f9eaea;
-  box-shadow: 0 0 1px rgba(249, 234, 234, 0.25);
+  background: #a7cbaf;
+  box-shadow: 0 0 1px rgba(167, 203, 175, 0.25);
   color: #333;
 }
 .indoors .slider-btn {
   background-color: white;
 }
 
-.abc {
-  background-image: url(/images/hoodie.jpg);
-  background-size: cover;
+/* FEATURES */
+.feature-row {
+  justify-content: center;
+}
+
+.feature-container {
+  background-color: #81B48C;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 100%;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature-icon {
+  color: #212529;
+  background-color: #a7cbaf;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 1.5rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+  background-color: #373b3e;
+}
+
+.info-container {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.logo-col {
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+}
+
+.payment-types {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.footer-nav {
+  padding: 0;
+  list-style: none;
+}
+.footer-nav li {
+  margin-bottom: 1rem;
+}
+.footer-nav :hover {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.contacts p {
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-family: "Quicksand", sans-serif;
+  color: #646669;
+}
+
+.footer-link,
+.address {
+  color: #646669;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.footer-link img,
+.address img {
+  height: 3rem;
+}
+
+.copyright {
+  text-align: left;
+  color: #646669;
 }
 
 /* MEDIA QUERIES */
