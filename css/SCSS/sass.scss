@@ -289,6 +289,10 @@
             text-align: left;
             color: $lighter-font;
         }
+        
+        [title~=visa-icons] {
+            color: $dark-font;
+        }
         /* MEDIA QUERIES */
         
         @media (max-width:1440px) {

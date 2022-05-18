@@ -277,6 +277,10 @@ footer {
   color: #646669;
 }
 
+[title~=visa-icons] {
+  color: #212529;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1440px) {
   .carousel-caption {

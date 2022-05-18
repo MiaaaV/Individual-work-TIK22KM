@@ -5,10 +5,10 @@
 
 
 /* 
-      Primary theme colour          #81B48C                 tint #a7cbaf
+      Primary theme colour          #81B48C                 tint/shade  #a7cbaf/#679070
       White                         #fff
       Shade white                   rgb(255,255,255,.55)
-      Dark                          #212529                 tint #646669/#373b3e
+      Dark                          #212529                 tint/shade  #646669/#373b3e
 */
 
 
@@ -18,4 +18,5 @@
 /*
       Big text font               'Fredoka One', cursive
       Paragraph font              'Quicksand', sans-serif
+      
 */
