@@ -83,6 +83,10 @@ input {
     background-color: #c39aba;
 }
 
+.forgotten-password {
+    font-size: 1rem;
+}
+
 div+p {
     color: $light-font;
     font-size: $small-font;
@@ -96,11 +100,11 @@ p~p {
 }
 
 a {
-    color: #a7cbaf;
+    color: $dark-font;
 }
 
 a:hover {
-    color: $dark-font;
+    color: white;
 }
 
 @media (min-width: 1921px) {
