@@ -1,0 +1,137 @@
+body {
+  background-color: #373b3e;
+  /* https://unsplash.com/photos/U3aF7hgUSrk */
+  background-image: url(/images/background-dog.png);
+}
+
+.cta {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 50%;
+  padding-top: 13rem;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem #B481A9;
+}
+
+.cta-text-box {
+  display: grid;
+  font-family: "Quicksand", sans-serif;
+  color: #212529;
+  padding: 2rem 2.2rem 2rem 2.2rem;
+  margin: 0 auto;
+  text-align: left;
+  background-color: rgba(129, 180, 140, 0.6745098039);
+  border-radius: 10px;
+}
+
+.cta-heading {
+  font-family: "Fredoka One", cursive;
+}
+
+form {
+  margin: auto;
+  padding: 0 2rem;
+}
+
+label {
+  padding: 0.7rem 0 0.2rem 0;
+  font-weight: bold;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  text-align: left;
+  padding-top: 1.5rem;
+  gap: 1rem;
+}
+.checkbox-grid label {
+  font-size: 1rem;
+}
+
+#checkbox {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-top: 50%;
+}
+
+.btn {
+  background-color: #B481A9;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 1.5rem 5rem;
+}
+
+.btn:hover {
+  background-color: #c39aba;
+}
+
+div + p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+}
+
+p ~ p {
+  padding: 0;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+a {
+  color: #a7cbaf;
+}
+
+a:hover {
+  color: #212529;
+}
+
+@media (min-width: 1921px) {
+  body {
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.624);
+  }
+
+  .cta {
+    padding-top: 3rem;
+    max-width: 100%;
+  }
+
+  .cta-text-box {
+    padding: 0.5rem 0.2;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  .checkbox-grid label {
+    font-size: 1rem;
+  }
+
+  #checkbox {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .btn {
+    margin: 1.5rem 0;
+  }
+}
+
+/*# sourceMappingURL=account-styles.css.map */
