@@ -7,6 +7,36 @@ let textBox = document.getElementById("cta-text-box");
 let container = document.getElementById("rest-container");
 
 
+function registerNow() {
+
+    document.getElementById("name-field").innerHTML = "";
+    document.getElementById("email-field").innerHTML = "";
+    document.getElementById("password-field").innerHTML = "";
+
+    const NAME_ERROR = "Name cannot include numbers.";
+    const EMAIL_ERROR = "Email must include @ -sign.";
+    const PASSW_ERROR = "Password must be at least 8 characters long.";
+
+    let name = document.getElementById("full-name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+
+    if (name !== 1) {
+        document.getElementById("name-field").innerHTML = NAME_ERROR;
+    }
+    if (email !== "@") {
+        document.getElementById("email-field").innerHTML = EMAIL_ERROR;
+
+    }
+    if (password.length !== 8) {
+        document.getElementById("password-field").innerHTML = PASSW_ERROR;
+
+    }
+
+}
+
+
 function getDog() {
 
     textBox.addEventListener("click", changeDisplay)
@@ -25,7 +55,6 @@ function getDog() {
                 document.getElementById('print-img-field').innerHTML = ("<br>" + "<img src='" + data.message + "'>");
             }
         )
-
 
 }
 
