@@ -104,6 +104,20 @@ a:hover {
   body {
     background-image: none;
   }
+
+  .rest-container {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .btn-lg {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
 }
 @media (max-width: 768px) {
   .navbar {
@@ -136,6 +150,35 @@ a:hover {
   .btn {
     margin: 1.5rem 0;
   }
+}
+/* JAVASCRIPT RELATED CSS */
+.rest-container {
+  text-align: center;
+  max-width: 30rem;
+  height: 20rem;
+  margin: 0 auto;
+}
+
+.active {
+  display: none;
+}
+
+.print-text {
+  font-family: "Fredoka One", cursive;
+  font-size: 1.2rem;
+}
+
+.print-img > img {
+  max-width: 70%;
+  border-radius: 10px;
+}
+
+.btn-lg {
+  font-family: "Quicksand", sans-serif;
+}
+
+.invalid {
+  background-color: red;
 }
 
 /*# sourceMappingURL=account-styles.css.map */

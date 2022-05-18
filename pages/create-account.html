@@ -34,8 +34,13 @@
 
     <div class="container">
         <!-- cta = call to action-->
-        <div class="cta">
-            <div class="cta-text-box">
+        <div id="cta" class="cta">
+            <div id="rest-container" class="rest-container active">
+                <div class="print-text" id="print-text-field"></div>
+                <button onclick="moreDogs()" class="btn btn-lg" id="dog-btn">More dogs!</button>
+                <div class="print-img" id="print-img-field"></div>
+            </div>
+            <div id="cta-text-box" class="cta-text-box">
                 <h2 class="cta-heading">Create a new account</h2>
                 <p class="cta-text">Already have an account? Log in <a href="log-in.html">here</a>.</p>
                 <form class="cta-form" action="#">
@@ -52,14 +57,14 @@
                     <div>
                         <label for="password">Password*</label>
                         <br>
-                        <input id="password" type="password" minlength="8" placeholder="Password" required>
+                        <input id="password" type="current-password" minlength="8" placeholder="Password" required>
                     </div>
                     <div class="checkbox-grid">
                         <input id="checkbox" type="checkbox" required>
                         <label style="font-weight: normal" for="checkbox">Yes, I would like to receive information about Dogccessory products, offers and services in my email! I can stop receiving messages at any time. (optional)</label>
                     </div>
                     <div style="text-align: center;">
-                        <button class="btn btn-lg" type="button">Register now</button>
+                        <button onclick="getDog()" class="btn btn-lg" type="button">Register now</button>
                     </div>
 
                     <p>* Mandatory fields</p>
@@ -71,10 +76,14 @@
         </div>
     </div>
 
+    <!-- REST JavaScript -->
+    <script src="dogs.js"></script>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
