@@ -6,7 +6,6 @@ $dark-font: #212529;
 $light-font: rgb(255, 255, 255, .55);
 $small-font: 0.8rem;
 body {
-    background-color: #373b3e;
     /* https://unsplash.com/photos/U3aF7hgUSrk */
     background-image: url("../../images/background-dog.png");
 }
@@ -109,7 +108,7 @@ a:hover {
 
 @media (min-width: 1921px) {
     body {
-        background-image: none;
+        background-image: url("../../images/about-background.jpg");
     }
     .rest-container {
         text-align: center;
