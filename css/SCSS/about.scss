@@ -73,14 +73,14 @@ ion-icon {
     padding-right: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .accordion-container {
         max-width: 100%;
         padding: 2rem 0 0;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .about-container {
         padding: 3rem 1rem;
     }

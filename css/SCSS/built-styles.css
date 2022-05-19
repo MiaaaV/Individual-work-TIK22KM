@@ -275,6 +275,7 @@ footer {
 .copyright {
   text-align: left;
   color: #646669;
+  font-size: 1rem;
 }
 
 [title~=visa-icons] {
