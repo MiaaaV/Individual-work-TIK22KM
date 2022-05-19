@@ -43,11 +43,12 @@
             <div id="cta-text-box" class="cta-text-box">
                 <h2 class="cta-heading">Create a new account</h2>
                 <p class="cta-text">Already have an account? Log in <a href="log-in.html">here</a>.</p>
-                <form class="cta-form" action="#">
+
+                <form name="myForm" id="myForm" class="cta-form" onsubmit="validateForm();" method="post">
                     <div>
                         <label for="full-name">Full name*</label>
                         <br>
-                        <input id="full-name" type="text" placeholder="Full name" required>
+                        <input id="full-name" name="full-name" type="text" minlength="3" placeholder="Full name" autocomplete="off" required>
                         <p id="name-field"></p>
                     </div>
                     <div>
@@ -59,20 +60,20 @@
                     <div>
                         <label for="password">Password*</label>
                         <br>
-                        <input id="password" type="current-password" minlength="8" placeholder="Password" required>
+                        <input id="password" type="password" minlength="8" placeholder="Password" autocomplete="off" required />
                         <p id="password-field"></p>
                     </div>
                     <div class="checkbox-grid">
-                        <input id="checkbox" type="checkbox" required>
+                        <input id="checkbox" type="checkbox">
                         <label style="font-weight: normal" for="checkbox">Yes, I would like to receive information about Dogccessory products, offers and services in my email! I can stop receiving messages at any time. (optional)</label>
                     </div>
                     <div style="text-align: center;">
-                        <button onclick="registerNow()" class="btn btn-lg" type="button">Register now</button>
+                        <button id="button " type="submit " class="btn btn-lg " type="button ">Register now</button>
                     </div>
 
                     <p>* Mandatory fields</p>
-                    <p> By registering an account, you accept <a href="../pages/under-construction.html">our general terms and conditions</a>.</p>
-                    <p> Please read about our <a href="/pages/under-construction.html">privacy</a>.</p>
+                    <p> By registering an account, you accept <a href="../pages/under-construction.html ">our general terms and conditions</a>.</p>
+                    <p> Please read about our <a href="/pages/under-construction.html ">privacy</a>.</p>
 
                 </form>
             </div>
@@ -80,12 +81,12 @@
     </div>
 
     <!-- REST JavaScript -->
-    <script src="dogs.js"></script>
+    <script src="dogs.js "></script>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
 
 </body>
 

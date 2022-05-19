@@ -16,7 +16,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 50%;
-    padding-top: 13rem;
+    padding-top: 11rem;
 }
 
 .cta *:focus {
@@ -180,8 +180,4 @@ a:hover {
 
 .btn-lg {
     font-family: $basic-font;
-}
-
-.invalid {
-    background-color: red;
 }
